@@ -44,17 +44,22 @@ A Python application/framework for defining, enforcing, and managing security po
 - Python 3.8+  
 - Virtual environment setup (recommended)
 
+---
+
 ### Installation
 
-###bash commands
+**bash commands**
+
 git clone https://github.com/Aqua-dev6674/Security-Policy-Management.git
 cd Security-Policy-Management
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
+---
 
-###Configuration
+**Configuration**
+
 policies:
   - name: require_strong_passwords
     description: "Enforce password complexity"
@@ -63,7 +68,9 @@ policies:
       require_special: true
       require_uppercase: true
 
-###Running the Application
+---
+
+**Running the Application**
 
 python main.py To run the application
 python User_Interface.py	Launch the user interface
@@ -73,45 +80,28 @@ python buildfile.py	Execute build and packaging tasks
 
 Use --help flags if available to get more command details.
 
-Project Structure
-├── ProjectInfo.py
-├── main.py
-├── User_Interface.py
-├── emailverification.py
-├── securitypolicy.py
-├── signup_interface.py
-├── hash.py
-├── buildfile.py
-├── test.py
-├── .venv/
-├── .vscode/
-├── build/
-├── images/
-└── organization.db
+---
+
+**Project Structure**
+
 main.py: Entry point and coordinator.
-
 User_Interface.py, signup_interface.py: UI-related modules.
-
 securitypolicy.py: Core policy logic.
-
 emailverification.py: Handles email workflows.
-
 hash.py: Utility for secure hashing (e.g., passwords).
-
 buildfile.py: Build scripts.
-
 test.py: Basic test suite.
-
 organization.db: Example database for development/testing.
 
-###Contributing
+---
+
+**Contributing**
 Fork the repo.
-
 Create a feature branch: git checkout -b feature-name
-
 Make your changes and add tests.
-
 Submit a pull request—code reviews and feedback welcome!
 
-Authors
+---
+
+**Authors**
 Aqua-dev6674 – Original project lead
